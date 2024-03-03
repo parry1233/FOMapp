@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/layout_padding"
+    android:paddingEnd="@dimen/layout_padding"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/openBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openImg"
+        android:text="Open Image" />
+
+    <Button
+        android:id="@+id/UploadBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="upload"
+        android:text="Upload" />
+
+    <TextView
+        android:id="@+id/status_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="None" />
+
+    <ScrollView
+        android:id="@+id/bio_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/cropViewerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/PlayBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toVideoPlay"
+                android:text="Check Video Result" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cropTypeTXT"
+                android:text="Choosed Crop Type: crop (default)"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

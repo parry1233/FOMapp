@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoPage"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/PlayBTN"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/success"
+        android:textColor="@color/black"
+        android:onClick="play"
+        android:text="Load" />
+    <Button
+        android:id="@+id/BackBTN"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/danger"
+        android:textColor="@color/white"
+        android:onClick="back"
+        android:text="Back" />
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="title">Pic2Vid</string>
+    <string name="app_name">Pic2Vid</string>
+    <string name="ServerIP">http://192.168.1.114:8888</string>
+</resources>
